@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calculator Tests</title>
+
+  <link rel="stylesheet" href="qunit/qunit-1.17.1.css">
+  <script src="qunit/qunit-1.17.1.js"></script>
+  <script src="calculator.js"></script>
+
+  <script>
+
+    QUnit.test("that addition succed",
+        function(assert) {
+            assert.equal(add(10,20), 30, "30 expected");
+            assert.equal(add(15,20), 30, "30 expected");
+        });
+
+        QUnit.test("that addition succed",
+        function(assert) {
+            assert.equal(minus(20,10), 10, "10 expected");
+            assert.equal(minus(15,20), 10, "10 expected");
+        });
+
+        QUnit.test("that addition succed",
+        function(assert) {
+            assert.equal(miltiply(10,20), 200, "200 expected");
+            assert.equal(miltiply(15,20), 200, "200 expected");
+        });
+
+        QUnit.test("that addition succed",
+        function(assert) {
+            assert.equal(divide(20,10), 2, "2 expected");
+            assert.equal(divide(15,20), 2, "2 expected");
+        });
+
+  </script>
+</head>
+<body>
+
+    <div id="qunit-fixture"></div>
+    <div id="qunit"></div>
+
+</body>
+</html>
